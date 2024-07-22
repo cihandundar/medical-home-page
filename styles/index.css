@@ -423,3 +423,129 @@ nav {
 }
 
 /* DOCTOR SECTION CSS v */
+
+.doctor {
+  padding-block: 60px;
+  background-color: rgb(236, 236, 236);
+}
+.doctor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 817px) {
+  .doctor-container {
+    justify-content: center;
+  }
+}
+
+.doctor-title {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.doctor-title > h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.doctor-title > p {
+  line-height: 1.5;
+  color: var(--background-color-header);
+}
+
+.doctor-container-box {
+  text-align: center;
+  height: 350px;
+  width: 280px;
+  background-color: var(--primary-color);
+}
+
+.doctor-container-box-top {
+  background-color: rgb(184, 180, 180);
+  height: 150px;
+}
+
+.doctor-container-box-text {
+  margin-block: 30px;
+  padding-inline: 15px;
+}
+
+.doctor-container-box-text > h4 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.doctor-container-box-text > p {
+  padding-top: 10px;
+}
+
+.doctor-container-box-btn > button {
+  border: 1px solid #0194e9;
+  background-color: var(--primary-color);
+  color: #0194e9;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.doctor-container-box-btn > button:hover {
+  background-color: #0194e9;
+  color: #fff;
+}
+.circle {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.circle-item {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #0194e9;
+  padding: 5px;
+  border-radius: 50%;
+}
+.circle-item:nth-child(1) {
+  background-color: #0194e9;
+}
+
+/* NUMBERS SECTION CSS */
+
+.numbers {
+  background-color: #0457f1;
+  padding-block: 60px;
+}
+
+.numbers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.numbers-col {
+  color: var(--primary-color);
+}
+@media (max-width: 817px) {
+  .numbers-col {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.numbers-col > h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.numbers-col > p {
+  margin-top: 10px;
+}
