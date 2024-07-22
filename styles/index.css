@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #fff;
+  --background-color-header: gray;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* NAV CSS */
+header {
+  background-color: var(--background-color-header);
+}
+
+/* NAV - TOP -CSS */
+.nav-top {
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-top-item ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-top-item ul li {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* NAV BOTTOM CSS */
+
+nav {
+  padding: 20px 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left > h1 {
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-right ul li {
+  cursor: pointer;
+  color: var(--primary-color);
+}
