@@ -549,3 +549,131 @@ nav {
 .numbers-col > p {
   margin-top: 10px;
 }
+
+/* SERVICES SECTION - CSS */
+
+.services {
+  padding-block: 60px;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 980px) {
+  .services-container {
+    flex-direction: column;
+  }
+}
+
+.services-container-left {
+  background-color: #0457f1;
+  padding-inline: 30px;
+  padding-top: 30px;
+  width: 300px;
+  height: 520px;
+}
+
+@media (max-width: 980px) {
+  .services-container-left {
+    width: 100%;
+  }
+}
+
+.services-container-left > h3 {
+  color: #fff;
+}
+
+.services-container-left > ul li {
+  margin-top: 25px;
+  color: #fff;
+}
+
+.services-container-left > ul li:not(:last-child) {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.services-container-left > button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.services-container-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.services-container-right-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  padding: 10px;
+  background-color: #0194e9;
+  color: #fff;
+}
+
+.arrow:nth-child(1) {
+  background-color: rgb(200, 224, 246);
+}
+
+.services-container-right-card-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 980px) {
+  .services-container-right-wrapper {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .services-container-right-card-wrapper {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+
+.services-container-box {
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 450px;
+  width: 250px;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 980px) {
+  .services-container-box {
+    width: 100%;
+  }
+}
+
+.services-container-box-top {
+  background-color: rgb(184, 180, 180);
+  height: 150px;
+}
+
+.services-container-box-text {
+  margin-block: 30px;
+  padding-inline: 15px;
+}
+
+.services-container-box-text > h4 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.services-container-box-text > p {
+  padding-top: 10px;
+}
