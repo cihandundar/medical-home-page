@@ -832,3 +832,160 @@ nav {
 .blue-text {
   color: #0194e9;
 }
+
+/* REQUEST SECTION CSS */
+
+.request {
+  padding-block: 60px;
+  background-color: rgb(236, 236, 236);
+}
+
+.request-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 980px) {
+  .request-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+.accordion-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.faq {
+  max-width: 600px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 426px) {
+  .question h3 {
+    font-size: 1rem;
+  }
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.3s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.request-right {
+  width: 500px;
+  background-color: var(--primary-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+@media (max-width: 980px) {
+  .request-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.request-right-form-input {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.request-right-form-input > div {
+  width: 100%;
+}
+
+.request-right-form-input > div > input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+  border: none;
+}
+.request-right-form-input > div > select {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+}
+
+.request-right-form-input > textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(236, 236, 236);
+}
+
+form > button {
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  padding: 15px 30px;
+  background-color: #0194e9;
+  color: var(--primary-color);
+}

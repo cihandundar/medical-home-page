@@ -1,3 +1,4 @@
+// SLIDER
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -5,6 +6,16 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// ACCORDION MENU
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
+
+// HAMBURGER MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".header-wrapper");
 
