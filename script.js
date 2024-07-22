@@ -1,3 +1,10 @@
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".header-wrapper");
 
