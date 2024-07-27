@@ -11,7 +11,12 @@ const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
+    if (faq.classList.contains("active")) {
+      faq.classList.remove("active");
+    } else {
+      faqs.forEach((f) => f.classList.remove("active"));
+      faq.classList.add("active");
+    }
   });
 });
 

@@ -118,7 +118,8 @@ header {
   gap: 20px;
 }
 
-.nav-top-item ul li {
+.nav-top-item ul li a,
+i {
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -170,13 +171,14 @@ nav {
   }
 }
 
-.nav-right ul li {
+.nav-right ul li a,
+i {
   cursor: pointer;
   color: var(--primary-color);
   position: relative;
 }
 
-.nav-right ul li::before {
+.nav-right ul li a::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -187,7 +189,7 @@ nav {
   transition: width 0.5s ease;
 }
 
-.nav-right ul li:hover::before {
+.nav-right ul li a:hover::before {
   width: 100%;
 }
 
@@ -1023,7 +1025,7 @@ form > button {
   }
 }
 .footer-top-container > ul > li {
-  color: var(--background-color-header);
+  color: var(--primary-color);
   border-bottom: 1px solid gray;
   padding-block: 15px;
 }
@@ -1036,7 +1038,7 @@ form > button {
 }
 
 .footer-social > li {
-  color: gray;
+  color: gainsboro;
   cursor: pointer;
 }
 
@@ -1065,13 +1067,13 @@ form > button {
 .footer-flex-wrapper ul li {
   margin-bottom: 15px;
   cursor: pointer;
-  color: var(--background-color-header);
+  color: var(--primary-color);
 }
 
 .footer-post-flex {
   display: flex;
   align-items: center;
-  color: var(--background-color-header);
+  color: var(--primary-color);
 }
 
 .footer-post-flex:nth-child(1) {
