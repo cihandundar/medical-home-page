@@ -1,6 +1,29 @@
+// NEWS SLIDER
+
+var swiper = new Swiper(".news-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// REVIEWS SLIDER
+
+var swiper = new Swiper(".reviews-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// DOCTOR SLIDER
 const container = document.querySelector(".slider-container");
 const sliderTrack = document.querySelector(".slider-track");
-const doctorBoxes = document.querySelectorAll(".doctor-box");
+const doctorBoxes = document.querySelectorAll(".box");
 const circles = document.querySelectorAll(".circle-item");
 
 let currentIndex = 0;
@@ -41,7 +64,7 @@ window.addEventListener("resize", updateSlider);
 
 updateSlider();
 
-// SLIDER
+// HERO SLIDER
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
