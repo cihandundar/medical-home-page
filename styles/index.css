@@ -929,3 +929,39 @@ form > button {
 }
 
 /* FOOTER SECTION CSS */
+
+footer {
+  padding-block: 60px;
+  background-color: #01147f;
+  color: #fff;
+}
+.flex > div > li {
+  margin-top: 10px;
+}
+.flex > div > li a {
+  color: #fff;
+}
+
+.footer-left {
+  margin-right: 50px;
+}
+
+.footer-post-flex {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-post-flex > img {
+  width: 100px;
+  margin-right: 10px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.footer-social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
