@@ -1,22 +1,47 @@
-// NEWS SLIDER
-
-var swiper = new Swiper(".news-swiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 // REVIEWS SLIDER
 
 var swiper = new Swiper(".reviews-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    620: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// NEWS SLIDER
+
+var swiper = new Swiper(".news-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    620: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
 });
 
