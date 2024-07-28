@@ -35,6 +35,10 @@ a {
   justify-content: space-between;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 100px;
