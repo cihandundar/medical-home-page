@@ -1,3 +1,82 @@
+const container = document.querySelector(".slider-container");
+const sliderTrack = document.querySelector(".slider-track");
+const doctorBoxes = document.querySelectorAll(".doctor-box");
+const circles = document.querySelectorAll(".circle-item");
+
+let currentIndex = 0;
+
+function getItemsPerPage() {
+  const width = window.innerWidth;
+  if (width <= 480) {
+    return 1;
+  } else if (width <= 768) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
+
+function updateSlider() {
+  const itemsPerPage = getItemsPerPage();
+  const boxWidth = container.offsetWidth / itemsPerPage;
+  sliderTrack.style.transform = `translateX(-${currentIndex * boxWidth}px)`;
+
+  circles.forEach((circle, i) => {
+    if (i === currentIndex / itemsPerPage) {
+      circle.classList.add("active");
+    } else {
+      circle.classList.remove("active");
+    }
+  });
+}
+
+circles.forEach((circle, index) => {
+  circle.addEventListener("click", () => {
+    currentIndex = index * getItemsPerPage();
+    updateSlider();
+  });
+});
+
+window.addEventListener("resize", updateSlider);
+
+updateSlider();
+
+// SERVICES SLIDER
+document.addEventListener("DOMContentLoaded", () => {
+  const leftArrow = document.querySelector(".left-arrow");
+  const rightArrow = document.querySelector(".right-arrow");
+  const servicesTrack = document.querySelector(".services-track");
+  const servicesBoxes = document.querySelectorAll(".services-box");
+
+  let visibleIndex = 0;
+
+  function updateSlider() {
+    const boxWidth = servicesBoxes[0].offsetWidth;
+    const gap = 20; // Margin-right değerini buraya koyun
+    servicesTrack.style.transform = `translateX(-${
+      visibleIndex * (boxWidth + gap)
+    }px)`;
+  }
+
+  leftArrow.addEventListener("click", () => {
+    if (visibleIndex > 0) {
+      visibleIndex--;
+      updateSlider();
+    }
+  });
+
+  rightArrow.addEventListener("click", () => {
+    if (visibleIndex < servicesBoxes.length - 3) {
+      visibleIndex++;
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", updateSlider);
+
+  updateSlider();
+});
+
 // SLIDER
 var swiper = new Swiper(".mySwiper", {
   navigation: {
