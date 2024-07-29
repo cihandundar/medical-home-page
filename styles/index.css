@@ -279,7 +279,7 @@ i {
   color: #000;
 }
 
-.swiper-slide-item > h1 {
+.swiper-slide-item > div {
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 500;
