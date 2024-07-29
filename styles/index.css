@@ -25,19 +25,11 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
-}
-
-.flex {
   display: flex;
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.wrap {
-  flex-wrap: wrap;
 }
 
 .section-title {
@@ -411,7 +403,9 @@ i {
   color: #0194e9;
 }
 
-.about-box > h4 {
+.about-box > div {
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-block: 25px;
 }
 
@@ -423,23 +417,16 @@ i {
 
 /* DOCTOR SECTION CSS v */
 
-.slider-container {
-  overflow: hidden;
-  height: 60vh;
-  position: relative;
+.doctor {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  padding-block: 60px;
 }
 
 .doctor-box {
-  flex: 0 0 calc(33.33% - 15px);
   margin-right: 20px;
-  height: 390px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -461,19 +448,8 @@ i {
   object-fit: cover;
   object-position: top;
 }
-@media (max-width: 768px) {
-  .doctor-box {
-    min-width: 50%;
-  }
-}
-@media (max-width: 480px) {
-  .doctor-box {
-    min-width: 100%;
-  }
-}
-
 .doctor-box-text {
-  padding-top: 30px;
+  padding-block: 30px;
   text-align: center;
 }
 
@@ -495,24 +471,6 @@ i {
   color: var(--primary-color);
 }
 
-.circle {
-  display: flex;
-  justify-content: center;
-  padding-block: 50px;
-}
-
-.circle-item {
-  width: 10px;
-  height: 10px;
-  background-color: gray;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.circle-item.active {
-  background-color: #0194e9;
-}
 /* NUMBERS SECTION CSS */
 
 .numbers {
@@ -601,21 +559,13 @@ i {
 .services-right-btn {
   display: flex;
   gap: 10px;
-}
-
-.arrow {
-  padding: 10px;
-  background-color: #0194e9;
-  color: #fff;
-}
-
-.arrow:nth-child(1) {
-  background-color: rgb(200, 224, 246);
+  position: relative;
 }
 
 .services-right-card-wrapper {
-  display: flex;
-  gap: 20px;
+  max-width: 800px;
+  overflow: hidden;
+  height: 460px;
 }
 
 @media (max-width: 980px) {
@@ -634,8 +584,6 @@ i {
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  height: 450px;
-  width: 250px;
   background-color: var(--primary-color);
 }
 
@@ -656,14 +604,13 @@ i {
   margin-block: 30px;
   padding-inline: 15px;
 }
-
-.services-box-text > h4 {
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
+.services-box-text span {
+  font-weight: bold;
 }
 
 .services-box-text > p {
   padding-top: 10px;
+  font-size: 1rem;
 }
 
 /* REVIEWS SECTION CSS */
@@ -672,6 +619,7 @@ i {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .reviews-box {
@@ -714,6 +662,7 @@ i {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .news-box {
@@ -935,10 +884,10 @@ footer {
   background-color: #01147f;
   color: #fff;
 }
-.flex > div > li {
+.container > div > li {
   margin-top: 10px;
 }
-.flex > div > li a {
+.container > div > li a {
   color: #fff;
 }
 
@@ -946,17 +895,23 @@ footer {
   margin-right: 50px;
 }
 
-.footer-post-flex {
+.footer-post-flex a {
   margin-top: 10px;
   display: flex;
   align-items: center;
 }
 
-.footer-post-flex > img {
+.footer-post-flex > a > img {
   width: 100px;
   margin-right: 10px;
   object-fit: cover;
   height: 100%;
+}
+
+.footer-post-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 
 .footer-social {
