@@ -1,3 +1,10 @@
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 // REVIEWS SLIDER
 
 var swiper = new Swiper(".reviews-swiper", {
@@ -67,7 +74,7 @@ var swiper = new Swiper(".slider-track", {
     },
   },
 });
-// DOCTOR SLIDER
+// SERVICES SLIDER
 
 var swiper = new Swiper(".services-right-card-wrapper", {
   slidesPerView: 3,
@@ -76,6 +83,10 @@ var swiper = new Swiper(".services-right-card-wrapper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: {
@@ -89,7 +100,6 @@ var swiper = new Swiper(".services-right-card-wrapper", {
     },
   },
 });
-services - right - card - wrapper;
 
 // ACCORDION MENU
 const faqs = document.querySelectorAll(".faq");

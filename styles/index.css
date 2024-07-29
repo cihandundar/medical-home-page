@@ -28,8 +28,24 @@ a {
   display: flex;
 }
 
+@media (max-width: 901px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+@media (max-width: 901px) {
+  .flex-column {
+    flex-direction: column;
+  }
 }
 
 .section-title {
@@ -243,22 +259,24 @@ i {
 }
 
 .swiper-button-next {
-  background-color: #000 !important;
+  background-color: #0194e9 !important;
   padding: 20px;
 }
 .swiper-button-prev {
-  background-color: #000 !important;
+  background-color: #0194e9 !important;
   padding: 20px;
 }
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   font-size: 14px !important;
+  color: #000;
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   font-size: 14px !important;
+  color: #000;
 }
 
 .swiper-slide-item > h1 {
@@ -284,7 +302,7 @@ i {
     flex-direction: column;
   }
   .swiper-slide-item > button {
-    width: 50%;
+    width: 100%;
     margin-top: 10px;
   }
 }
@@ -386,6 +404,12 @@ i {
   align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 300px;
+}
+
+@media (max-width: 901px) {
+  .about-box {
+    width: 100%;
+  }
 }
 
 .about-box > span {
@@ -556,10 +580,9 @@ i {
   margin-bottom: 30px;
 }
 
-.services-right-btn {
-  display: flex;
-  gap: 10px;
+.services-btn {
   position: relative;
+  right: 50px;
 }
 
 .services-right-card-wrapper {
@@ -568,14 +591,14 @@ i {
   height: 460px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 901px) {
   .services-right-wrapper {
     margin-top: 20px;
     padding: 20px;
   }
 
   .services-right-card-wrapper {
-    flex-wrap: wrap;
+    width: 100%;
     padding: 20px;
   }
 }
