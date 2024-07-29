@@ -184,7 +184,7 @@ nav {
   justify-content: space-between;
 }
 
-.nav-left > h1 a {
+.nav-left > div > a {
   color: var(--primary-color);
   font-weight: 500;
   letter-spacing: 3px;
@@ -287,13 +287,13 @@ i {
 }
 
 @media (max-width: 689px) {
-  .swiper-slide-item > h1 {
+  .swiper-slide-item > div {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 425px) {
-  .swiper-slide-item > h1 {
+  .swiper-slide-item > div {
     font-size: 1.5rem;
   }
   .swiper-slide-item {
