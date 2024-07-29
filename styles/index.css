@@ -96,7 +96,7 @@ header {
 
 @media (max-width: 689px) {
   header {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   .mobile-logo {
@@ -106,7 +106,7 @@ header {
     z-index: 4;
   }
 
-  .mobile-logo > h1 {
+  .mobile-logo > div {
     color: var(--primary-color);
     font-weight: 500;
     letter-spacing: 3px;
@@ -191,7 +191,7 @@ nav {
 }
 
 @media (max-width: 689px) {
-  .nav-left > h1 {
+  .nav-left > div {
     display: none;
   }
 }
