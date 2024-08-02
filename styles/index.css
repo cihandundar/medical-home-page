@@ -61,6 +61,10 @@ a {
   margin-top: 10px;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* NAV CSS */
 header {
   background-color: var(--background-color-header);
@@ -561,6 +565,10 @@ i {
   color: #fff;
 }
 
+.services-left > ul li a {
+  color: #fff;
+}
+
 .services-left > ul li:not(:last-child) {
   border-bottom: 1px solid var(--primary-color);
   padding-bottom: 10px;
@@ -584,6 +592,17 @@ i {
 .services-btn {
   position: relative;
   right: 50px;
+  transform: rotate(0deg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-btn .prev-btn {
+  transform: rotate(180deg);
+}
+
+.services-btn .next-btn {
+  transform: rotate(180deg);
 }
 
 .services-right-card-wrapper {
@@ -919,7 +938,7 @@ footer {
   margin-right: 50px;
 }
 
-.footer-post-flex a {
+.footer-post-flex {
   margin-top: 10px;
   display: flex;
   align-items: center;

@@ -1,4 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -10,6 +12,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".reviews-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop: true,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -34,6 +37,7 @@ var swiper = new Swiper(".reviews-swiper", {
 var swiper = new Swiper(".news-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop: true,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -57,6 +61,7 @@ var swiper = new Swiper(".news-swiper", {
 var swiper = new Swiper(".slider-track", {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop: true,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -79,6 +84,7 @@ var swiper = new Swiper(".slider-track", {
 var swiper = new Swiper(".services-right-card-wrapper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop: true,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
