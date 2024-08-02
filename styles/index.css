@@ -944,7 +944,7 @@ footer {
   align-items: center;
 }
 
-.footer-post-flex > a > img {
+.footer-post-flex > img {
   width: 100px;
   margin-right: 10px;
   object-fit: cover;
