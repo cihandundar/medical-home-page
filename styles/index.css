@@ -927,15 +927,33 @@ footer {
   background-color: #01147f;
   color: #fff;
 }
-.container > div > li {
-  margin-top: 10px;
-}
-.container > div > li a {
+
+footer > ul > li > a {
   color: #fff;
 }
 
-.footer-left {
-  margin-right: 50px;
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-info > a {
+  margin-top: 10px;
+}
+
+.footer-link > a {
+  margin-top: 10px;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-post-flex {
@@ -959,7 +977,7 @@ footer {
 
 .footer-social {
   margin-top: 20px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 20px;
 }
