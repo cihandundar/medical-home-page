@@ -65,6 +65,10 @@ button {
   cursor: pointer;
 }
 
+.swiper-pagination {
+  padding-bottom: 25px;
+}
+
 /* NAV CSS */
 header {
   background-color: var(--background-color-header);
@@ -451,7 +455,7 @@ i {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  padding-block: 60px;
+  padding-block: 95px;
 }
 
 .doctor-box {
@@ -658,7 +662,7 @@ i {
 
 /* REVIEWS SECTION CSS */
 .reviews {
-  padding-block: 60px;
+  padding-block: 95px;
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
@@ -701,7 +705,7 @@ i {
 
 /* NEWS SECTION CSS */
 .news {
-  padding-block: 60px;
+  padding-block: 95px;
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
